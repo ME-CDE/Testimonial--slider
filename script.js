@@ -20,24 +20,24 @@ const jobs = document.querySelector('.job');
 
 let counter = 0
 
-function checking() {
+function prev() {
+    counter--
+    if (counter === -1) {
+        counter = data.length-1
+    }
     image.setAttribute("src", data[counter].image);
     description.textContent = data[counter].description
     names.textContent = data[counter].name
     jobs.textContent = data[counter].job;
 }
 
-// function prev() {
-//     counter--
-//     if (counter === -1) {
-//         counter = data.length-1
-//     }
-//     checking()
-// }
 function next() {
     counter++
     if (counter === data.length) {
         counter = 0
     }
-    checking()
+    image.setAttribute("src", data[counter].image);
+    description.textContent = data[counter].description
+    names.textContent = data[counter].name
+    jobs.textContent = data[counter].job;
 }
