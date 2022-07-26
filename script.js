@@ -1,3 +1,4 @@
+checking()
 const data = [
     {
         image : `images/image-tanya.jpg`,
@@ -25,7 +26,6 @@ function checking() {
     names.textContent = data[counter].name
     jobs.textContent = data[counter].job;
 }
-checking()
 
 function prev() {
     counter--
