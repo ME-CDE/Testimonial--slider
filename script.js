@@ -12,6 +12,7 @@ const data = [
         job : `Junior Front-end Developer`
     }
 ];
+
 const image = document.querySelector('.main-img');
 const description = document.querySelector('.description');
 const names = document.querySelector('.name');
@@ -22,12 +23,12 @@ let counter = 0
 checking()
 
 function checking() {
-    setTimeout(() => {
-        image.setAttribute("src", data[counter].image);
+    image.setAttribute("src", data[counter].image);
+    if (image.attributes.src.value != "") {
         description.textContent = data[counter].description
         names.textContent = data[counter].name
         jobs.textContent = data[counter].job;
-    }, 100);
+    }
 }
 
 function prev() {
