@@ -17,15 +17,17 @@ const description = document.querySelector('.description');
 const names = document.querySelector('.name');
 const jobs = document.querySelector('.job');
 
-let counter = 0;
+let counter = 0
 
-window.addEventListener('DOMContentLoaded', checking);
+checking()
 
 function checking() {
     image.setAttribute("src", data[counter].image);
-    description.textContent = data[counter].description
-    names.textContent = data[counter].name
-    jobs.textContent = data[counter].job;
+    setTimeout(() => {
+        description.textContent = data[counter].description
+        names.textContent = data[counter].name
+        jobs.textContent = data[counter].job;
+    }, 500);
 }
 
 function prev() {
