@@ -20,15 +20,10 @@ const jobs = document.querySelector('.job');
 let counter = 0
 
 function checking() {
-    try {
-        image.setAttribute("src", data[counter].image);
-    } catch (error) {
-        console.error(error)
-    }finally{
-        description.textContent = data[counter].description
-        names.textContent = data[counter].name
-        jobs.textContent = data[counter].job;
-    }
+    image.setAttribute("src", data[counter].image);
+    description.textContent = data[counter].description
+    names.textContent = data[counter].name
+    jobs.textContent = data[counter].job;
 }
 checking()
 function prev() {
