@@ -27,6 +27,7 @@ function checking() {
         }
     })
 }
+window.addEventListener('DOMContentLoaded', checking)
 checking()
 
 function prev() {
