@@ -28,14 +28,11 @@ function checking() {
 window.addEventListener('load', checking);
 
 function prev() {
+    counter--
     if (counter === -1) {
         counter = data.length-1
-        checking()
-    }else{
-        counter--
-        checking()
     }
-    
+    checking()
 }
 function next() {
     counter++

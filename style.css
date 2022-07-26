@@ -53,7 +53,7 @@
         background-image: url(./images/image-tanya.jpg);
         box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
         background-size: cover;
-        transition: background-image 10.15s ease-in-out;
+        transition: background-image 0.15s ease-in-out;
         animation: image 1.1s normal forwards;
     }
     @keyframes image {
