@@ -22,8 +22,8 @@ let counter = 0
 checking()
 
 function checking() {
-    image.setAttribute("src", data[counter].image);
     setTimeout(() => {
+        image.setAttribute("src", data[counter].image);
         description.textContent = data[counter].description
         names.textContent = data[counter].name
         jobs.textContent = data[counter].job;
