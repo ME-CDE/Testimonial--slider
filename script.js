@@ -14,21 +14,24 @@ const data = [
         job : `Junior Front-end Developer`
     }
 ];
+const image = document.querySelector('.image-div');
+const description = document.querySelector('.description');
+const names = document.querySelector('.name');
+const jobs = document.querySelector('.job');
 
 let counter = 0
 
 function checking() {
     data.forEach((slides)=>{
         if (slides.id === counter) {
-            document.querySelector('.image-div').style.backgroundImage = `url(${slides.image})`
-            document.querySelector('.description').textContent = slides.description
-            document.querySelector('.name').textContent = slides.name
-            document.querySelector('.job').textContent = slides.job;
+            image.style.backgroundImage = `url(${slides.image})`
+            description.textContent = slides.description
+            names.textContent = slides.name
+            jobs.textContent = slides.job;
         }
     })
 }
-window.addEventListener('DOMContentLoaded', checking)
-checking()
+window.addEventListener('DOMContentLoaded', checking);
 
 function prev() {
     counter--
