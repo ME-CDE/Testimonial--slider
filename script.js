@@ -22,15 +22,12 @@ const jobs = document.querySelector('.job');
 let counter = 0
 
 function checking() {
-    data.forEach((slides)=>{
-        if (slides.id === counter) {
-            image.style.backgroundImage = `url(${slides.image})`
-            description.textContent = slides.description
-            names.textContent = slides.name
-            jobs.textContent = slides.job;
-        }
-    })
+    image.src = data[counter].image
+    description.textContent = data[counter].description
+    names.textContent = data[counter].name
+    jobs.textContent = data[counter].job;
 }
+
 window.addEventListener('load', checking);
 
 function prev() {
