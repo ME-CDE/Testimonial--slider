@@ -27,7 +27,7 @@ function checking() {
         }
     })
 }
-window.addEventListener('load', checking)
+window.addEventListener('loadeddata', checking)
 checking()
 
 function prev() {
