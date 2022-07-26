@@ -27,13 +27,13 @@ function checking() {
     jobs.textContent = data[counter].job;
 }
 
-function prev() {
-    counter--
-    if (counter === -1) {
-        counter = data.length-1
-    }
-    checking()
-}
+// function prev() {
+//     counter--
+//     if (counter === -1) {
+//         counter = data.length-1
+//     }
+//     checking()
+// }
 function next() {
     counter++
     if (counter === data.length) {
