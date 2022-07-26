@@ -24,11 +24,9 @@ checking()
 
 function checking() {
     image.setAttribute("src", data[counter].image);
-    if (image.attributes.src.value === data[counter].image) {
-        description.textContent = data[counter].description
-        names.textContent = data[counter].name
-        jobs.textContent = data[counter].job;
-    }
+    description.textContent = data[counter].description
+    names.textContent = data[counter].name
+    jobs.textContent = data[counter].job;
 }
 
 function prev() {
