@@ -20,7 +20,7 @@ const jobs = document.querySelector('.job');
 
 let counter = 0
 
-function checking() {
+function checking(counter) {
     image.setAttribute("src", data[counter].image);
     description.textContent = data[counter].description
     names.textContent = data[counter].name
@@ -32,12 +32,12 @@ function prev() {
     if (counter === -1) {
         counter = data.length-1
     }
-    checking()
+    checking(counter)
 }
 function next() {
     counter++
     if (counter === data.length) {
         counter = 0
     }
-    checking()
+    checking(counter)
 }
