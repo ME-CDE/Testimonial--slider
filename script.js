@@ -28,6 +28,7 @@ function checking() {
 }
 
 function prev() {
+    checking()
     counter--
     if (counter === -1) {
         counter = data.length-1
@@ -35,6 +36,7 @@ function prev() {
     checking()
 }
 function next() {
+    checking()
     counter++
     if (counter === data.length) {
         counter = 0
