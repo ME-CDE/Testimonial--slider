@@ -1,8 +1,3 @@
-const div = document.querySelector('.image-div');
-const image = document.createElement('img');
-image.classList.add('main-img');
-div.appendChild(image);
-
 const data = [
     {
         image : `images/image-tanya.jpg`,
@@ -17,10 +12,12 @@ const data = [
         job : `Junior Front-end Developer`
     }
 ];
-
+const image = document.querySelector('.main-img');
 const description = document.querySelector('.description');
 const names = document.querySelector('.name');
 const jobs = document.querySelector('.job');
+const prevs = document.querySelector('.prev');
+const nexts = document.querySelector('.next');
 
 let counter = 0
 
@@ -45,3 +42,5 @@ function next() {
     }
     checking()
 }
+prevs.addEventListener('click', prev);
+nexts.addEventListener('click', next);
