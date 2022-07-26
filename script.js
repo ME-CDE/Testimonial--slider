@@ -20,8 +20,6 @@ const jobs = document.querySelector('.job');
 
 let counter = 0
 
-checking()
-
 function checking() {
     image.setAttribute("src", data[counter].image);
     description.textContent = data[counter].description
