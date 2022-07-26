@@ -55,7 +55,7 @@
         background-size: cover;
         animation: image 1.1s forwards;
     }
-    .main-img{
+    #main-img{
         width: 100%;
         height: 100%;
         border-radius: 7px;
@@ -179,7 +179,7 @@
         background-position: 0 0;
         z-index: 1;
     }
-    .image-div, .main-img{
+    .image-div, #main-img{
         border-radius: 10px;
     }
     .text{

@@ -14,33 +14,33 @@ const data = [
         job : `Junior Front-end Developer`
     }
 ];
-const image = document.querySelector('.image-div');
+const image = document.getElementById('main-img');
 const description = document.querySelector('.description');
 const names = document.querySelector('.name');
 const jobs = document.querySelector('.job');
 
-let counter = 0
+let counter = 0;
 
 function checking() {
-    image.src = data[counter].image
-    description.textContent = data[counter].description
-    names.textContent = data[counter].name
+    image.src = data[counter].image;
+    description.textContent = data[counter].description;
+    names.textContent = data[counter].name;
     jobs.textContent = data[counter].job;
 }
 
 window.addEventListener('load', checking);
 
 function prev() {
-    counter--
+    counter--;
     if (counter === -1) {
-        counter = data.length-1
+        counter = data.length-1;
     }
-    checking()
+    checking();
 }
 function next() {
-    counter++
+    counter++;
     if (counter === data.length) {
-        counter = 0
+        counter = 0;
     }
-    checking()
+    checking();
 }
