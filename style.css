@@ -50,11 +50,14 @@
         max-height:320px;
         height: 67vw;
         border-radius: 7px;
-        background-image: url(./images/image-tanya.jpg);
         box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
         background-size: cover;
-        transition: background-image 0.15s ease-in-out;
         animation: image 1.1s normal forwards;
+    }
+    .main-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
     }
     @keyframes image {
         0%{
@@ -174,6 +177,9 @@
         max-height:540px;
         background-position: 0 0;
         z-index: 1;
+    }
+    .image-div, .main-img{
+        border-radius: 10px;
     }
     .text{
         position: relative;
