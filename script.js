@@ -25,7 +25,7 @@ function checking() {
     names.textContent = data[counter].name
     jobs.textContent = data[counter].job;
 }
-window.addEventListener('load', checking);
+checking()
 
 function prev() {
     counter--
