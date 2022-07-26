@@ -35,17 +35,15 @@ window.addEventListener('load', checking);
 
 function prev() {
     counter--
-    checking()
     if (counter === -1) {
         counter = data.length-1
-        checking()
     }
+    checking()
 }
 function next() {
     counter++
-    checking()
     if (counter === data.length) {
         counter = 0
-        checking()
     }
+    checking()
 }
