@@ -27,7 +27,7 @@ function checking() {
         description.textContent = data[counter].description
         names.textContent = data[counter].name
         jobs.textContent = data[counter].job;
-    }, 200);
+    }, 100);
 }
 
 function prev() {
