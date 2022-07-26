@@ -28,14 +28,14 @@ function checking() {
 }
 
 function prev() {
-    counter -= 1
+    counter--
     if (counter === -1) {
         counter = data.length-1
     }
     checking()
 }
 function next() {
-    counter += 1
+    counter++
     if (counter === data.length) {
         counter = 0
     }
