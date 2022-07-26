@@ -16,10 +16,10 @@ const image = document.querySelector('.main-img');
 const description = document.querySelector('.description');
 const names = document.querySelector('.name');
 const jobs = document.querySelector('.job');
-const prevs = document.querySelector('.prev');
-const nexts = document.querySelector('.next');
 
-let counter = 0
+let counter = 0;
+
+window.addEventListener('DOMContentLoaded', checking);
 
 function checking() {
     image.setAttribute("src", data[counter].image);
@@ -27,7 +27,7 @@ function checking() {
     names.textContent = data[counter].name
     jobs.textContent = data[counter].job;
 }
-checking()
+
 function prev() {
     counter--
     if (counter === -1) {
@@ -42,5 +42,3 @@ function next() {
     }
     checking()
 }
-prevs.addEventListener('click', prev);
-nexts.addEventListener('click', next);
