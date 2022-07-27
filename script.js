@@ -14,7 +14,7 @@ const data = [
         job : `Junior Front-end Developer`
     }
 ];
-const image = document.getElementById('main-img');
+const image = document.querySelector('.image-div');
 const description = document.querySelector('.description');
 const names = document.querySelector('.name');
 const jobs = document.querySelector('.job');
@@ -22,7 +22,7 @@ const jobs = document.querySelector('.job');
 let counter = 0;
 
 function checking() {
-    image.src = data[counter].image;
+    image.style.backgroundImage = `url(${data[counter].image})`;
     description.textContent = data[counter].description;
     names.textContent = data[counter].name;
     jobs.textContent = data[counter].job;

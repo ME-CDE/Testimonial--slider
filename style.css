@@ -50,15 +50,17 @@
         max-height:320px;
         height: 67vw;
         border-radius: 7px;
-        background-image: url(./images/image-john.jpg);
+        background-image: url(./images/image-tanya.jpg);
         box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
         background-size: cover;
+        transition: background-image 0.25s ease-out;
         animation: image 1.1s forwards;
     }
     #main-img{
         width: 100%;
         height: 100%;
         border-radius: 7px;
+        opacity: 0;
     }
     @keyframes image {
         0%{
